@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Betaling</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/script.js"></script>
+    <meta name="Kantinens menu" content="Læs om de mange retter i menuen i Erhversakademiets kantine i Århus">
+
+    <link rel="icon" type="image/x-icon" href="img/logo.png" class="tab_ikon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+
+<body>
+
+    <button class="open-pop" onclick="openModal(1)">BESTIL NU</button>
+
+
+
+            <!-- POP MODAL  1 -->
+            <div id="myModal1" class="bestil-pop">
+                <div class="bestil-pop-content">
+                    <h2>KURV</h2>
+                    <p>Dette er modal boks 1.</p>
+                    <button class="bestil-pop-button" onclick="openModal(2)">Næste </button>
+                </div>
+            </div>
+            <!-- POP MODAL 2 -->
+            <div id="myModal2" class="bestil-pop">
+                <div class="bestil-pop-content">
+                    <h2>VÆLG AFHENTNING</h2>
+                    <div class="pop2-grid">
+                        <div>
+                            <img src="img/ringvejsyd.jpg" alt="Ringvej Syd" onclick="toggleSelection(this)">
+                            <p>Ringvejsyd 104</p>
+                        </div>
+                        <div>
+                            <img src="img/adresse1.jpg alt=" Soenderhoej" onclick="toggleSelection(this)">
+                            <p>Sønderhøj 30</p>
+                        </div>
+                        <div>
+                            <img src="img/adresse2.jpg" alt="Soenderhoej" onclick="toggleSelection(this)">
+                            <p>Sønderhøj 1</p>
+                        </div>
+                        <div>
+                            <img src="img/adresse3.jpg" alt="Soenderhoej" onclick="toggleSelection(this)">
+                            <p>Sønderhøj 7G</p>
+                        </div>
+                        <div>
+                            <img src="img/adresse4.jpg" alt="Skole" onclick="toggleSelection(this)">
+                            <p>Skole</p>
+                        </div>
+                        <div>
+                            <img src="img/adresse5.jpg" alt="Skole" onclick="toggleSelection(this)">
+                            <p>Skole 2</p>
+                        </div>
+                    </div>
+                    <button class="bestil-pop-button" onclick="openModal(3); saveSelection()">Næste</button>
+                </div>
+            </div>
+            <!-- POP MODAL  3 -->
+            <div id="myModal3" class="bestil-pop">
+                <div class="bestil-pop-content">
+                    <h2>BETALING</h2>
+                    <div class="box-container">
+                        <!-- OPLYSNING  KASSE 1 I POP/MODAL 3  -->
+                        <div class="oplysnings_box">1. Dine oplysninger
+                            <br>
+                            <br>
+                            <label for="fornavn">Fornavn & efternavn:</label>
+                            <input type="text" id="fornavn" name="fornavn">
+                            <label for="mail">Email:</label>
+                            <input type="email" id="mail" name="mail">
+                            <label for="tlf">Telefonnummer:</label>
+                            <input type="tel" id="tlf" name="tlf">
+                        </div>
+                        <!-- BETALING   KASSE 2 I POP/MODAL 3 -->
+                        <div class="betaling_box">2. Betalingsmetode
+                            <p>Hvor skal din ordre
+                                -bekræftigelse sendes?</p>
+                            <div class="hvidkasse">
+                                <div class="checkmark-container">
+                                    <span>SMS</span>
+                                    <label for="bekraeftigelse-sms"></label>
+                                    <input type="checkbox" id="bekraeftigelse-sms" name="bekraeftigelse-sms">
+                                </div>
+                                <div class="checkmark-container">
+                                    <span>MAIL</span>
+                                    <label for="bekraeftigelse-mail"></label>
+                                    <input type="checkbox" id="bekraeftigelse-mail" name="bekraeftigelse-mail">
+                                </div>
+                            </div>
+                            <p>Hvordan vil du betale?</p>
+                            <div class="hvidkasse">
+                                <div class="checkmark-container">
+                                    <span>Mobilepay</span>
+                                    <label for="mobilpay"></label>
+                                    <input type="checkbox" id="betaling-mobilepay" name="betaling-mobilepay">
+                                </div>
+                                <div class="checkmark-container">
+                                    <span>Kort</span>
+                                    <label for="kort"></label>
+                                    <input type="checkbox" id="betaling-kort" name="betaling-kort">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ORDREOVERSIGT KASSE 3 I POP/MODAL 3  -->
+                        <div class="ordreoversigt_box">Kasse 3
+                            <p>Her er en oversigt over dine valg!</p>
+                            <div class="hvidkasse">
+                                <div class="info-container">
+                                    <h3>Modal 2 - Billedvalg:</h3>
+                                    <p id="modal2-info"></p>
+                                </div>
+                                <div class="info-container">
+                                    <h3>Modal 3 - Betalingsmetode:</h3>
+                                    <p id="modal3-betalingsmetode-info"></p>
+                                </div>
+                                <div class="info-container">
+                                    <h3>Modal 3 - Hvor skal ordrebekræftelse sendes:</h3>
+                                    <p id="modal3-ordrebekraeftelse-info"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="bestil-pop-button" onclick="openModal(4)">Næste</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <!-- POP MODAL  4 -->
+            <div id="myModal4" class="bestil-pop">
+                <div class="bestil-pop-content">
+                    <h2>GENNEFØRT</h2>
+                    <p>Tak for dit køb! Vi forbedrer din mad nu.</p>
+                    <p>Du kan se din ordre på SMS. Husk at hente din mad inden 14:00</p>
+                    <img src="img/checkmark.png" alt="checkmark" class="check_img">
+                    <button class="bestil-pop-button" onclick="closeModal(4)">OK</button>
+                </div>
+            </div>
+</body>
+
+</html>

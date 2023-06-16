@@ -1,0 +1,1348 @@
+
+  body {
+    margin: 0px;
+    font-family: 'neucha';
+    background-color: #92B2B4;
+    box-sizing: border-box;
+  }
+
+  .main {
+    padding-top: 20%;
+    background-color: #FEF8F0;
+
+  }
+  .main2 {
+    padding-top: 10%;
+    background-color: #FEF8F0;
+
+  }
+  
+  /* -----nav styling */
+  .nav {
+    height: 90px;
+    width: 100%;
+    background-color: #2c2c2c;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 3;
+  }  
+
+  
+  .nav > .nav-links {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 50px;
+    text-decoration: none;
+    color: #efefef;
+    text-align: center;
+  }
+
+  .nav > .nav-links > a:hover{
+    opacity: 0.5;
+  }
+
+  .nav > #nav-check {
+    display: none;
+  }
+
+  .nav > .nav-links > a:hover::before,
+.nav > .nav-links > a:hover::after {
+  opacity: 0.5;
+}
+
+.logo{
+   float: left;
+}
+#logoforside{
+    width: 25%;
+
+}
+
+#logoforside2{
+    width: 25%;
+
+}
+
+#icon1{
+    width: 20%;
+    margin-left: 29px;
+}
+
+/* --------------Kurv computer style------------- */
+ #kurvknap{
+    background-color: transparent;
+    border-style: none;
+   
+ }
+
+#kurv1{
+    width: 50%;
+    margin-right: 33px;
+
+}
+
+
+#kurv1:hover{
+    opacity: 0.5;
+  
+}
+/* --------------Kurv MOBIL style------------- */
+#kurvknap2{
+    display: none;
+    background-color: transparent;
+    border-style: none;
+    margin-bottom: 10px;
+   
+ }
+
+#kurv2{
+    display: none;
+    width: 30%;
+    margin-right: -12px;
+}
+
+
+
+
+
+  
+  #cartItems.show {
+      display: block;
+  }
+  
+  .cart-content {
+      text-align: center;
+  }
+  
+  .cart-content h2 {
+      margin-top: 0;
+  }
+  
+  .cart-content img {
+      max-width: 100%;
+      margin-top: 10px;
+  }
+  
+  #cartItems {
+    display: none;
+    background-color: #FFFDFA;
+    border: 1px solid #ccc;
+    padding: 150px;
+    margin: 0 auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+}
+
+#payButton {
+    display: block;
+    margin: 10px auto;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    border-radius: 8%;
+    background-color: #9BBE8C;
+    color: #f2f2f2;
+    border-style: none;
+    font-family: 'Neucha', cursive;
+}
+ 
+/*-----FORSIDE main content---- */
+
+#baggrund {
+    width: 100%;
+    z-index: -1;
+    margin-bottom: -8px;
+}
+
+
+.main-content {
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -245%);
+    text-align: center;
+    color: #ffffff;
+
+}
+
+#h1 {
+    font-size: 60pt;
+}
+
+#skolelogo {
+    width: 40%;
+}
+
+#bestilknap {
+    background-color: #f8f8f8;
+    color: #5F8284;
+    border-radius: 30px;
+    padding: 6px 20px;
+    font-size: 16px;
+    border: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: 'Neucha', cursive;
+}
+
+#bestilknap2 {
+    float: right;
+    margin-right: 10px;
+    background-color: #90bc76;
+    color: #ffffff;
+    border-radius: 30px;
+    padding: 6px 20px;
+    font-size: 16px;
+    border: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: 'Neucha', cursive;
+}
+
+#bestilknap:hover{
+    opacity: 0.5;
+}
+
+.bestilnuknap{
+    background-color: #f8f8f8;
+
+    border-radius: 30px;
+    padding: 6px 20px;
+    font-size: 16px;
+    border: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: 'Neucha', cursive;
+}
+
+#bestilnuknap {
+    color: #5F8284;
+    text-decoration: none;
+}
+#skolelogo {
+    width: 40%;
+}
+
+
+/* ------STET BY STEP CONTENT */
+.flex-container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    background-color: #92B2B4;
+
+  }
+  .flex-item1 {
+    width: 25%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Neucha', cursive;
+    color: #f8f8f8;
+    font-size: 13pt;
+    margin-bottom: 65px;
+
+  }
+  
+#step1 {
+    width: 70%;
+}
+
+/* ------INFO main content------------- */
+#ripped {
+    width: 100%;
+    z-index: -1;
+    margin-bottom: -5px;
+    margin-top: -82px;
+}
+
+
+.flex-container2 {
+    display: flex;
+    flex-wrap: wrap;
+    color: #FEF8F0;
+    background-color: #FEF8F0;
+}
+
+
+.flex-item2 {
+    flex: 25%;
+    padding-left: 200px;
+    padding-top: 100px;
+    box-sizing: border-box;
+    background-color: #FEF8F0;
+    font-size: 25px;
+    color: #55545C;
+    line-height: 1.5;
+}
+
+.flex-item3 {
+    flex: 25%;
+    padding-right: 100px;
+    box-sizing: border-box;
+    background-color: #FEF8F0;
+    font-size: 12px;
+    color: #f0f2f3;
+}
+
+
+.cirkel1 {
+    width: 90%;
+    position: relative;
+    padding-left: 8%;
+}
+
+.cirkel2 {
+    width: 90%;
+    position: relative;
+    padding-left: 30%;
+    margin-top: -20%;
+
+}
+
+.cirkel3 {
+    width: 90%;
+    position: relative;
+    padding-left: 50%;
+    margin-top: -20%;
+}
+
+.cirkel1:hover,
+.cirkel2:hover,
+.cirkel3:hover {
+    opacity: 80%;
+    transform: scale(1.05);
+    transition: .3s ease;
+}
+
+#h2{
+    font-size: 20pt;
+    font-family: 'Fredericka the Great';
+
+}
+
+
+/* -------------KANTINE BILLEDE main content-------------- */
+#ripped2 {
+    width: 100%;
+    margin-bottom:69px;
+
+}
+
+.torben {
+    width: 70%;
+    padding-left: 20%;
+}
+
+#citat {
+    padding-top: 10%;
+    padding-right: 20%;
+    padding-bottom: 10%;
+    line-height: 1.5;
+    color: #333333;
+    
+}
+
+#kantineimg {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+    z-index: -1;
+}
+
+.flexboximg{
+color: #FEF8F0;
+
+
+}
+.flex-container4 {
+    display: flex;
+    flex-wrap: wrap;
+    color: #FEF8F0;
+    background-color: #FEF8F0;
+}
+
+.flex-item4 {
+    flex: 25%;
+    box-sizing: border-box;
+    background-color: #FEF8F0;
+    font-size: 20px;
+    color: #282828;
+    line-height: 1.5;
+}
+
+
+/* ======================================SIDE 2 STYLING======================================================= */
+
+/* ------------side nav til computer------- */
+.side-nav {
+
+    position: fixed;
+    top: 20%;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: #FEF8F0;
+    color: #282828;
+    font-size: 15pt;
+    font-family: 'Neucha', cursive;
+    line-height: 3;
+
+}
+
+.side-nav a {
+    text-decoration: none;
+    /* Remove underline */
+    list-style: none;
+    color: #657779;
+}
+
+.side-nav ul {
+    list-style-type: none;
+    /* Remove the dots */
+    color: #657779;
+}
+/* ------------side nav til mobil!------- */
+
+.sidenav2 a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    display: block;
+    display: none;
+  }
+ 
+  #madnav{
+    width: 50%;
+    margin-top: 10%;
+
+  }
+/* overskrifter */
+
+#MADh2 {
+    font-size: 60pt;
+    margin-top: -110px;
+    margin-left: 250px;
+    font-family: 'Fredericka the Great', cursive;
+    color: #4a4a4a;
+}
+
+#MADh3 {
+    font-size: 60pt;
+    margin-top: 50px;
+    font-family: 'Fredericka the Great', cursive;
+    color: #282828;
+    margin-left: 205px;
+
+}
+
+.menu {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.menu li {
+    padding: 10px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #333;
+
+}
+/* --------img størrelser-------- */
+
+#madsize {
+    width: 100%;
+}
+
+#madsize2 {
+    width: 50%;
+}
+
+#dagenssize {
+    width: 80%;
+}
+/* --------flexbox content mad-------- */
+.flex-container6 {
+    display: flex;
+    margin-left: 200px;
+    margin-right: 100px;
+}
+.flex-container7 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 200px;
+    margin-right: 100px;
+    background-color: #fef8f0;
+
+}
+
+.flex-item7 {
+    flex: 1 0 25%;
+    padding: 50px;
+    padding-right: 15px;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #fef8f0;
+    font-size: 20px;
+    color: #f0f2f3;
+    font-family: 'Neucha', cursive;
+}
+
+/* ------------ text og + styling------- */
+#plus {
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 118px;
+    background-color: #5c5753;
+    color: #ffffff;
+    font-size: 20pt;
+}
+.product-name {
+    margin-top: 5px;
+    color: #282828;
+    font-size: 20pt;
+}
+
+.product-name2 {
+    margin-top: 5px;
+    color: #282828;
+    line-height: 1.5;
+    text-align: left;
+    margin-left: 10%;
+    font-size: 12pt;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+#plus2 {
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #5c5753;
+    color: #ffffff;
+    font-size: 20pt;
+    margin-right: 12px;
+}
+
+/* ----FOOTER----- */
+
+.footer {
+    background-image: linear-gradient(#92B2B4, #2c2c2c);
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+    z-index: 10;
+    position: relative;
+  }
+
+  .footer2 {
+    background-image: linear-gradient(#FEF8F0, #2c2c2c);
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+    z-index: 10;
+    position: relative;
+  }
+  
+  .flex-item-left {
+    color: #ffffff;
+    padding: 10px;
+    flex: 50%;
+    font-size: 12pt;
+    padding-top: 42px;
+  }
+
+  #footernav{
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 12pt;
+  }
+
+  
+  .flex-item-middle{
+
+  color: #ffffff;
+    padding: 10px;
+    flex: 50%;
+    font-size: 12pt;
+  }
+  
+  .flex-item-right {
+   
+    color: #ffffff;
+    padding: 10px;
+    flex: 50%;
+  }
+
+  #footericon{
+    width: 10%;
+    padding-top: 10px;
+  }
+
+/* ----side nav----- */
+
+.sidenav2 {
+    padding-top: 15px;
+}
+.sidenav2 a {font-size: 18px;}
+
+#backicon {
+    width: 5%;
+    margin-top: 41px;
+
+  }
+
+  
+  
+  @media (max-width:600px) {
+
+    #baggrund {
+        width: 100%;
+        z-index: -1;
+        padding-top: 85px;
+        margin-bottom: -8px;
+    }
+
+    .sidenav2 {
+        padding-top: 15px;
+    }
+    .sidenav2 a {font-size: 18px;}
+
+
+    .flex-item2 {
+        flex: 25%;
+        padding-left: 50px;
+        padding-top: 50px;
+        box-sizing: border-box;
+        background-color: #FEF8F0;
+        font-size: 17px;
+        color: #55545C;
+        line-height: 1.5;
+    }
+
+    .step1 {
+        width: 70%;
+    }
+
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+      
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 90px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+     
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+      z-index: 3;
+    }
+
+    /* logo mobil */
+
+    .logo{
+       margin-left:40%;
+       margin-top: 12px;
+      
+     }
+
+     /* -----MAIN CONTNENT SIDE 1----- */
+     .main-content {
+        z-index: 1;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #ffffff;
+    }
+
+    #h1 {
+        font-size: 30pt;
+    }
+
+    #skolelogo {
+        width: 40%;
+    }
+
+/* ------STET BY STEP main content------- */
+   
+
+      .flex-item1 {
+        width: 50%;
+        padding: 10px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Neucha', cursive;
+        color: #f8f8f8;
+        font-size: 13pt;
+        margin-bottom: 65px;
+        text-align: center;
+    
+      }
+
+/* -----INFO main content------ */
+      .flex-item2 {
+        flex: 25%;
+        padding-left: 50px;
+        padding-bottom: 30px;
+        padding-top: 50px;
+        box-sizing: border-box;
+        background-color: #FEF8F0;
+        font-size: 17px;
+        color: #55545C;
+        line-height: 1.5;
+    }
+
+    #ripped {
+        width: 100%;
+        z-index: -1;
+        margin-bottom: -6px;
+        margin-top: -92px;
+    }
+
+.flex-item3 {
+    flex: 20%;
+    padding-right: 15px;
+    box-sizing: border-box;
+    background-color: #FEF8F0;
+    font-size: 12px;
+    color: #f0f2f3;
+}
+
+
+.cirkel1 {
+    width: 100%;
+    position: relative;
+    padding-left: 3%;
+    margin-top: 20%;
+}
+
+.cirkel2 {
+    width: 100%;
+    position: relative;
+    padding-left: 1%;
+    margin-top: -20%;
+
+}
+
+.cirkel3 {
+    width: 100%;
+    position: relative;
+    padding-left: 5%;
+    margin-top: -20%;
+}
+
+/* ------------------------KANTINE BILLEDE main content------ */
+#ripped2 {
+    width: 100%;
+    margin-bottom: -11px;
+}
+
+.torben {
+    width: 70%;
+    padding-left: 20%;
+}
+
+#citat {
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    line-height: 1.5;
+    text-align: center;
+}
+.flex-container4 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: #FEF8F0;
+    background-color: #FEF8F0;
+}
+
+/* --------------SIDE NAV -------------- */
+.side-nav {
+display: none;
+    position: fixed;
+    top: 20%;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: #FEF8F0;
+    color: #282828;
+    font-size: 15pt;
+    font-family: 'Neucha', cursive;
+    line-height: 3;
+
+}
+
+
+.sidenav2 {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index:2;
+    top: 8%;
+    left: 0;
+    background-color: #FEF8F0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 90px;
+  }
+  
+  .sidenav2 a {
+    padding: 30px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+  }
+
+  .bestilnuknap{
+    background-color: #f8f8f8;
+
+    border-radius: 30px;
+    padding: 6px 20px;
+    font-size: 16px;
+    border: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: 'Neucha', cursive;
+    margin-left: 160px;
+}
+
+#bestilnuknap {
+    color: #5F8284;
+    text-decoration: none;
+}
+
+  
+  .sidenav2 a:hover {
+    color: #2f2e2e;
+  }
+  
+  .sidenav2 .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  #backicon {
+    width: 5%;
+    margin-top: 63px;
+
+  }
+
+  #logoforside2{
+    width: 46%;
+    margin-left: -70px;
+
+}
+
+/* -----------MAIN CONTENT MOBIL----------- */
+#MADh2 {
+    font-size: 30pt;
+    margin-top: -31px;
+    margin-left: 150px;
+    font-family: 'Fredericka the Great', cursive;
+    color: #282828;
+}
+
+#MADh3{
+    font-size: 30pt;
+    margin-left: 115px;
+    margin-top: 40px;
+    font-family: 'Fredericka the Great', cursive;
+    color: #282828;
+    
+}
+/* --------img størrelser-------- */
+
+#madsize {
+    width:100%;
+}
+
+#madsize2 {
+    width: 100%;
+}
+
+#dagenssize {
+    width: 100%;
+}
+
+.flex-container6 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 35px;
+    margin-right: 25px;
+}
+.flex-container7 {
+    display: flex;
+
+    margin-left: 1px;
+    margin-right:1px;
+    background-color: #fef8f0;
+
+}
+
+.flex-item7 {
+    flex: 1 0 100%;
+    padding: 20px;
+    margin-left: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #fef8f0;
+    font-size: 20px;
+    color: #f0f2f3;
+    font-family: 'Neucha', cursive;
+}
+
+/* ------------ text og + styling------- */
+#plus {
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 141px;
+    background-color: #5c5753;
+    color: #ffffff;
+    font-size: 20pt;
+}
+.product-name {
+    margin-left: 50px;
+    margin-top: 5px;
+    color: #282828;
+    font-size: 20pt;
+}
+
+.product-name2 {
+    margin-top: 5px;
+    color: #282828;
+    line-height: 1.5;
+    text-align: left;
+    margin-left: 10%;
+    font-size: 12pt;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+#plus2 {
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #5c5753;
+    color: #ffffff;
+    font-size: 20pt;
+    margin-right: 12px;
+}
+
+
+#kurvknap{
+    background-color: transparent;
+    border-style: none;
+   
+ }
+
+#kurv1{
+    width: 12%;
+    margin-right: -12px;
+    display: none;
+}
+
+#kurv1:hover{
+    opacity: 0.5;
+  
+}
+
+
+  
+  #cartItems.show {
+      display: block;
+  }
+  
+  .cart-content {
+      text-align: center;
+  }
+  
+  .cart-content h2 {
+      margin-top: 0;
+  }
+  
+  .cart-content img {
+      max-width: 100%;
+      margin-top: 40px;
+  }
+  
+  #cartItems {
+    height: 350px;
+    width: 250px;
+    background-color: #FFFDFA;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 0 auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+}
+
+#kurvmobil{
+    width: 110%;
+}
+
+#payButton {
+    display: block;
+    margin: 10px auto;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    border-radius: 8%;
+    background-color: #9BBE8C;
+    color: #f2f2f2;
+    border-style: none;
+    font-family: 'Neucha', cursive;
+}
+
+
+#kurvknap2{
+    display: block;
+    background-color: transparent;
+    border-style: none;
+    margin-bottom: 10px;
+   
+ }
+
+#kurv2{
+    display: block;
+    width: 40%;
+    margin-right: -12px;
+}
+
+.nav2 {
+    height: 90px;
+    margin-top: 755px;
+    width: 100%;
+    background-color: #2c2c2c;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 3;
+  }
+
+  #payButton3 {
+    display: block;
+    margin: 25px auto;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 7%;
+    padding-top: 3%;
+    border-radius: 15%;
+    background-color: #9BBE8C;
+    color: #f2f2f2;
+    border-style: none;
+    font-family: 'Neucha', cursive;
+    font-size: 13pt;
+}
+/* -----footer---- */
+.footer {
+    flex-direction: column;
+  }
+
+
+  }
+
+
+  .open-pop {
+    font-size: 12pt;
+    padding: 5px 35px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    background-color:#4CAF50;
+    border-radius: 50px;
+    font-family: 'neucha';
+    border: none;
+
+
+}
+.bestil-pop {
+    display: none;
+    position: absolute;
+    z-index: 5;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    border-radius: 15px;
+    transition: all 5s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+.bestil-pop-content {
+    background-color: #e1d7ca;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 90%;
+    max-width: 300px;
+}
+.bestil-pop-button {
+    padding: 10px 20px;
+    margin: auto;
+    justify-content: center;
+    background: #8EB1B4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    border-radius: 20px;
+    font-family: 'Neucha', cursive;
+}
+/* BILLEDER TIL POP 2  */
+.pop2-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    margin-top: 20px;
+}
+.pop2-grid img {
+    width: 60%;
+    border-radius: 5px;
+    height: auto;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.pop2-grid p {
+    margin-top: 5px;
+}
+.pop2-grid img.selected {
+    border: 3px solid #4CAF50;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+/* POP 3 */
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* OPLYSNING KASSE 1 I POP/MODAL 3  */
+.oplysnings_box {
+    flex: 1;
+    flex-basis: 30%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+    background-color: #8EB1B4;
+    color: #fff;
+    padding: 10px;
+    margin: 5px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    margin: 20px;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 80%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 0.1px;
+}
+/* BETALING KASSE 2 I POP/MODAL 3  */
+.betaling_box {
+    flex: 2;
+    flex-basis: 30%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+    background-color: #769B9F;
+    color: #fff;
+    padding: 10px;
+    margin: 5px;
+}
+.hvidkasse {
+    background-color: #fff;
+    border-radius: 4px;
+    height: 74px;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  
+  .checkmark-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .checkmark-container span {
+    margin-left: 10px;
+    color: black;
+    justify-content: center;
+  }
+  .checkmark-container label:after {
+    content: "";
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  /* Styling for checked checkmark */
+  .checkmark-container input[type="checkbox"]:checked + label:after {
+    display: block;
+  }
+/* ORDREOVERSIGT - KASSE 3 I POP/MODAL 3 */
+.ordreoversigt_box {
+    flex: 3;
+    flex-basis: 30%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+    background-color: #6D8A8D;
+    color: #fff;
+    padding: 10px;
+    margin: 5px;
+}
+  
+  .ordreoversigt_box p {
+    margin-bottom: 10px;
+  }
+  
+  .hvidkasse {
+    background-color: white;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  
+  .info-container {
+    margin-bottom: 20px;
+  }
+  
+  .info-container h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .info-container p {
+    font-size: 14px;
+  }
+  
+/* POP 4 */
+.check_img {
+    width: 35%;
+    margin: auto;
+    justify-content: center;
+}
+
+#baggrundpopup{
+    width: 100%;
+    z-index: -10;
+}
+/*=============================================================================================
+========================================   COMPUTER   =========================================
+=============================================================================================*/
+@media screen and (min-width: 1200px) {
+    .bestil-pop-content {
+        width: 100%;
+        max-width: 900px;
+        z-index: 2;
+    }
+    .pop2-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+        margin-top: 20px;
+    }
+    .pop2-grid img {
+        width: 60%;
+        border-radius: 5px;
+        height: auto;
+        gap: 9px;
+    }
+    /* POP 3  */
+    .box-container {
+        display: flex;
+    }
+    .box {
+        flex: 1;
+        width: 50%;
+    }
+    /* POP 4  */
+    .check_img {
+        width: 10%;
+        margin-bottom: 2px;
+    }
+}
